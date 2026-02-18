@@ -1,12 +1,4 @@
-import {
-  Card,
-  Input,
-  Select,
-  Checkbox,
-  Radio,
-  Typography,
-  Button,
-} from "antd";
+import { Card, Input, Select, Checkbox, Radio, Typography, Button } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
 
 const { Title } = Typography;

@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function ResponseViewer() {
-  return (
-    <div>
-      ResponseViewer
-    </div>
-  )
+  return <div>ResponseViewer</div>;
 }
 
-export default ResponseViewer
+export default ResponseViewer;

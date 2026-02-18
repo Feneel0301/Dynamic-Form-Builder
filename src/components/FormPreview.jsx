@@ -1,4 +1,13 @@
-import { Form, Input, Button, Card, Typography, Select, Checkbox, Radio } from "antd";
+import {
+  Form,
+  Input,
+  Button,
+  Card,
+  Typography,
+  Select,
+  Checkbox,
+  Radio,
+} from "antd";
 
 const { Title, Text } = Typography;
 
@@ -139,9 +148,7 @@ export default function FormPreview({ fields, submissions, setSubmissions }) {
               </p>
             ))}
 
-            <Text type="secondary">
-              Submitted at: {submission.submittedAt}
-            </Text>
+            <Text type="secondary">Submitted at: {submission.submittedAt}</Text>
           </Card>
         ))}
       </div>
