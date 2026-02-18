@@ -1,16 +1,9 @@
 import { Card, Input, Button, Space, Switch } from "antd";
 
-export default function FieldSettings({
-  selectedField,
-  fields,
-  setFields
-}) {
-
+export default function FieldSettings({ selectedField, fields, setFields }) {
   const updateField = (key, value) => {
-    const updatedFields = fields.map(field =>
-      field.id === selectedField.id
-        ? { ...field, [key]: value }
-        : field
+    const updatedFields = fields.map((field) =>
+      field.id === selectedField.id ? { ...field, [key]: value } : field,
     );
     setFields(updatedFields);
   };
@@ -38,7 +31,6 @@ export default function FieldSettings({
   return (
     <div style={{ width: 300 }}>
       <Card title="Field Settings">
-
         {/* Label */}
         <div style={{ marginBottom: 16 }}>
           <label>Label</label>
@@ -50,7 +42,8 @@ export default function FieldSettings({
 
         {/* Required Toggle */}
         <div style={{ marginBottom: 16 }}>
-          <label>Required</label><br />
+          <label>Required</label>
+          <br />
           <Switch
             checked={selectedField.required}
             onChange={(checked) => updateField("required", checked)}
@@ -63,9 +56,7 @@ export default function FieldSettings({
             <label>Placeholder</label>
             <Input
               value={selectedField.placeholder || ""}
-              onChange={(e) =>
-                updateField("placeholder", e.target.value)
-              }
+              onChange={(e) => updateField("placeholder", e.target.value)}
             />
           </div>
         )}
@@ -76,9 +67,7 @@ export default function FieldSettings({
             <label>Default Value</label>
             <Input
               value={selectedField.defaultValue || ""}
-              onChange={(e) =>
-                updateField("defaultValue", e.target.value)
-              }
+              onChange={(e) => updateField("defaultValue", e.target.value)}
             />
           </div>
         )}
@@ -95,23 +84,16 @@ export default function FieldSettings({
                 <Input
                   key={index}
                   value={opt}
-                  onChange={(e) =>
-                    updateOption(index, e.target.value)
-                  }
+                  onChange={(e) => updateOption(index, e.target.value)}
                 />
               ))}
             </Space>
 
-            <Button
-              style={{ marginTop: 10 }}
-              onClick={addOption}
-              block
-            >
+            <Button style={{ marginTop: 10 }} onClick={addOption} block>
               Add Option
             </Button>
           </div>
         )}
-
       </Card>
     </div>
   );

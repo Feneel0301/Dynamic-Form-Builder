@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function PreviewForm() {
-  return (
-    <div>
-      previewform
-    </div>
-  )
+  return <div>previewform</div>;
 }
 
-export default PreviewForm
+export default PreviewForm;

@@ -1,7 +1,6 @@
 import { Card, Button, Space } from "antd";
 
 export default function BuilderPanel({ fields, setFields }) {
-
   const addField = (type) => {
     const newField = {
       id: Date.now(),
@@ -11,9 +10,7 @@ export default function BuilderPanel({ fields, setFields }) {
       required: false,
       defaultValue: "",
       options:
-        type === "dropdown" ||
-        type === "radio" ||
-        type === "checkbox"
+        type === "dropdown" || type === "radio" || type === "checkbox"
           ? ["Option 1", "Option 2"]
           : [],
     };
