@@ -1,16 +1,25 @@
-# React + Vite
+A Dynamic Form Builder web application that allows users to create, customize, and manage forms in real-time with a drag-and-drop interface. Built using React, Ant Design, Shadcn-UI, and Radix-UI, this project demonstrates interactive UI components, state management, and dynamic form rendering.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
 
-Currently, two official plugins are available:
+Drag-and-Drop Form Builder – Easily add, remove, and reorder form fields.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Multiple Field Types – Support for input, textarea, checkbox, radio, select, and more.
 
-## React Compiler
+Field Settings – Customize labels, placeholders, required fields, and validation rules.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Preview Mode – View the form in real-time as it will appear to end users.
 
-## Expanding the ESLint configuration
+Save & Edit – Persist forms locally or via API (future integration).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive Design – Works seamlessly on desktop and mobile devices.
+
+🛠️ Tech Stack
+
+Frontend: React, Ant Design, Shadcn-UI, Radix-UI
+
+State Management: React Hooks (useState, useEffect)
+
+Form Handling: Ant Design Form component (useForm)
+
+Icons & UI Enhancements: Ant Design Icons, Custom Styling
